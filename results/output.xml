@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.5.6 on linux)" generated="20200129 10:46:11.459" rpa="false">
+<suite source="/home/than/test_dictionary_variable/Test.robot" id="s1" name="Test">
+<test id="s1-t1" name="TC">
+<kw name="Log Structure">
+<arguments>
+<arg>${DIC}</arg>
+</arguments>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.506" endtime="20200129 10:46:11.506"></status>
+</kw>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>------------------------------</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.507" endtime="20200129 10:46:11.507"></status>
+</kw>
+<kw library="Collections" name="Get Dictionary Keys">
+<doc>Returns keys of the given ``dictionary`` as a list.</doc>
+<arguments>
+<arg>${structure}</arg>
+</arguments>
+<assign>
+<var>${keys}</var>
+</assign>
+<msg timestamp="20200129 10:46:11.508" level="INFO">${keys} = ['a', 'b']</msg>
+<status status="PASS" starttime="20200129 10:46:11.507" endtime="20200129 10:46:11.508"></status>
+</kw>
+<kw type="for" name="${item} IN [ @{keys} ]">
+<kw type="foritem" name="${item} = a">
+<kw name="Log Many To Console">
+<arguments>
+<arg>${item}</arg>
+<arg>${structure["${item}"]}</arg>
+</arguments>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.509" endtime="20200129 10:46:11.510"></status>
+</kw>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>------------------------------</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.510" endtime="20200129 10:46:11.510"></status>
+</kw>
+<kw type="for" name="${item} IN [ @{list} ]">
+<kw type="foritem" name="${item} = red">
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${item}</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.511" endtime="20200129 10:46:11.511"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.511" endtime="20200129 10:46:11.511"></status>
+</kw>
+<kw type="foritem" name="${item} = blue">
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${item}</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.512" endtime="20200129 10:46:11.512"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.511" endtime="20200129 10:46:11.512"></status>
+</kw>
+<kw type="foritem" name="${item} = green">
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${item}</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.512" endtime="20200129 10:46:11.513"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.512" endtime="20200129 10:46:11.513"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.510" endtime="20200129 10:46:11.513"></status>
+</kw>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>------------------------------</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.513" endtime="20200129 10:46:11.514"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.508" endtime="20200129 10:46:11.514"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.508" endtime="20200129 10:46:11.514"></status>
+</kw>
+<kw type="foritem" name="${item} = b">
+<kw name="Log Many To Console">
+<arguments>
+<arg>${item}</arg>
+<arg>${structure["${item}"]}</arg>
+</arguments>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.515" endtime="20200129 10:46:11.516"></status>
+</kw>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>------------------------------</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.516" endtime="20200129 10:46:11.516"></status>
+</kw>
+<kw type="for" name="${item} IN [ @{list} ]">
+<kw type="foritem" name="${item} = head">
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${item}</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.517" endtime="20200129 10:46:11.518"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.517" endtime="20200129 10:46:11.518"></status>
+</kw>
+<kw type="foritem" name="${item} = eyes">
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${item}</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.518" endtime="20200129 10:46:11.518"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.518" endtime="20200129 10:46:11.518"></status>
+</kw>
+<kw type="foritem" name="${item} = nose">
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${item}</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.519" endtime="20200129 10:46:11.519"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.519" endtime="20200129 10:46:11.519"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.517" endtime="20200129 10:46:11.519"></status>
+</kw>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>------------------------------</arg>
+</arguments>
+<status status="PASS" starttime="20200129 10:46:11.519" endtime="20200129 10:46:11.520"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.515" endtime="20200129 10:46:11.520"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.514" endtime="20200129 10:46:11.520"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.508" endtime="20200129 10:46:11.520"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.505" endtime="20200129 10:46:11.520"></status>
+</kw>
+<status status="PASS" starttime="20200129 10:46:11.504" critical="yes" endtime="20200129 10:46:11.521"></status>
+</test>
+<status status="PASS" starttime="20200129 10:46:11.460" endtime="20200129 10:46:11.521"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" id="s1" fail="0" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
